@@ -42,7 +42,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
+    testImplementation(libs.junit.jupiter)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.29")
+    androidTestImplementation(libs.junit.jupiter)
 }

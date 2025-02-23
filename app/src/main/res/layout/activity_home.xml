@@ -19,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/menu_home" />
+        app:srcCompat="@drawable/menu_home"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -30,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_assest1"
-        android:rotation="-10"/>
+        android:rotation="-10"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,11 +40,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins"
-        android:text="Hello"
+        android:text="@string/hello"
         android:textColor="@color/black"
         android:textSize="28sp"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView1"
@@ -50,7 +53,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/poppins"
-        android:text="Foodie!"
+        android:text="@string/foodie"
         android:textColor="@color/green"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/textView"
@@ -58,15 +61,48 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="235dp"
-        android:layout_height="75dp"
+        android:layout_width="286dp"
+        android:layout_height="83dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/dancingscript"
-        android:text="which indian food would you like to cook?"
-        android:textFontWeight="700"
-        android:textSize="25dp"
+        android:text="@string/which_indian_food_would_you_like_to_cook"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:focusable="false"
+        android:background="@drawable/searchview"
+        android:hint="Search recipe"
+        android:fontFamily="@font/poppinslight"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:paddingStart="47dp"
+        android:textColor="#5A5858"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/search_ic" />
 </androidx.constraintlayout.widget.ConstraintLayout>
