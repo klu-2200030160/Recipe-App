@@ -7,11 +7,6 @@ import com.example.myapplication.databinding.PopularRvItemsBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-data class PopularItem(
-    val img: String,
-    val title: String,
-    val ing: String
-)
 class PopularAdapter(var datalist: List<Recipe>, var context: Context) :
     RecyclerView.Adapter<PopularAdapter.ViewHolder>() {
 
